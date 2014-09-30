@@ -14,13 +14,12 @@
 <?php
 $run_twice = 0;
 foreach($blog_news as $blog_post) {
-  if ($run_twice <= 1) {
-        echo '<article class="blog_post">';
+if ($run_twice <= 1) {echo '<article class="blog_post">';      
 foreach($blog_post as $blog_tag => $blog_data) {
-    if ($blog_tag == 'post_title') {
-       echo '<h2 class="'.$blog_tag.'">'.$blog_data.'</h2>'; }
-  else {echo '<div class="'.$blog_tag.'">'.$blog_data.'</div>';      };
-                                                                     };
+if ($blog_tag == 'post_title') {echo '<h2 class="'.$blog_tag.'">'.$blog_data.'</h2>'; }    
+else {echo '<div class="'.$blog_tag.'">'.$blog_data.'</div>';      
+};
+};
        echo '</article>';
 $run_twice = $run_twice + 1;
               };

@@ -29,4 +29,16 @@
     )
   ;
   $site_footer = "Arvestustöö: Markus J6emets - 30.09.2014" ;
+
+  function team_members($name="Nimetu", $email="Puudub", $huvialad="Pole"){
+    return '
+      <div class="team-member">
+        <h2 class="member-name">' . $name . '</h2>
+        <div class="member-info"><span> E-mail: </span><a href=mailto:"' . $email . '">' . $email . '</a></div>
+        <div class="member-info"><span> huvialad: </span>' . $huvialad . '</div>
+      </div>'
+    ;
+  } 
+
+
 ?>
