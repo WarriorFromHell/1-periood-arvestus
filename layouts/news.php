@@ -20,7 +20,7 @@ foreach($blog_post as $blog_tag => $blog_data) {
     if ($blog_tag == 'post_title') {
        echo '<h2 class="'.$blog_tag.'">'.$blog_data.'</h2>'; }
   else {echo '<div class="'.$blog_tag.'">'.$blog_data.'</div>';      };
-                                              };
+                                                                     };
        echo '</article>';
 $run_twice = $run_twice + 1;
               };

@@ -28,4 +28,5 @@
       )
     )
   ;
+  $site_footer = "Arvestustöö: Markus J6emets - 30.09.2014" ;
 ?>
